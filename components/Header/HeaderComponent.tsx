@@ -13,31 +13,33 @@ const HeaderComponent = (props: Props) => {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between px-14 py-4 bg-white shadow-lg dark:bg-gray-800 transition-all duration-300 ease-in-out">
       <div className="flex items-center space-x-4">
-        <img
-          src={
-            theme === "light"
-              ? "/images/cylonoak-logo-dark.png"
-              : "/images/cylonoak_logo.png"
-          }
-          alt="Cylonoak Logo"
-          className="w-auto h-10"
-        />
+        <Link href="/">
+          <img
+            src={
+              theme === "light"
+                ? "/images/cylonoak-logo-dark.png"
+                : "/images/cylonoak_logo.png"
+            }
+            alt="Cylonoak Logo"
+            className="w-auto h-10 cursor-pointer"
+          />
+        </Link>
         <nav className="hidden space-x-4 md:flex">
           {/* Updated menu links with hover effects */}
           <Link
-            href="#"
+            href="/all-products"
             className="text-gray-700 text-sm dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
           >
             Products
           </Link>
           <Link
-            href="#"
+            href="/support"
             className="text-gray-700 text-sm dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
           >
             Support
           </Link>
           <Link
-            href="#"
+            href="/privacy"
             className="text-gray-700 text-sm dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
           >
             Learning
