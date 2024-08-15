@@ -1,6 +1,6 @@
 import React from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
-import { CircleUser, ExternalLink } from "lucide-react";
+import { CircleUser, ExternalLink, MoveUpIcon, MoveUpRight } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
@@ -43,7 +43,7 @@ const UserPopover = () => {
               href="#"
               className="text-blue-600 dark:text-blue-400 text-sm mt-2 inline-block"
             >
-              More Information <ExternalLink className="inline w-3 h-3 ml-1" />
+              More Information <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500" />
             </Link>
           </div>
         </div>
@@ -58,7 +58,7 @@ const UserPopover = () => {
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Adaptive Planning{" "}
-              <ExternalLink className="inline w-3 h-3 ml-1" />
+              <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500" />
             </Link>
           </li>
           <li>
@@ -66,7 +66,7 @@ const UserPopover = () => {
               href="#"
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
-              Workday Peakon <ExternalLink className="inline w-3 h-3 ml-1" />
+              Workday Peakon <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500" />
             </Link>
           </li>
           <li>
@@ -74,7 +74,7 @@ const UserPopover = () => {
               href="#"
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
-              Workday Extend <ExternalLink className="inline w-3 h-3 ml-1" />
+              Workday Extend <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500" />
             </Link>
           </li>
           <li>
@@ -82,7 +82,7 @@ const UserPopover = () => {
               href="#"
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
-              Workday Community <ExternalLink className="inline w-3 h-3 ml-1" />
+              Workday Community <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500" />
             </Link>
           </li>
         </ul>

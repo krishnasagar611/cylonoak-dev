@@ -3,7 +3,11 @@ import { Info, FileText, Send } from "lucide-react";
 
 export default function StayInTheLoop() {
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-900 px-14">
+    <section
+      data-aos="fade-up"
+      // data-aos-once={true}
+      className="py-16 bg-gray-100 dark:bg-gray-900 px-14"
+    >
       <div className="mx-auto">
         <h3 className="text-gray-600 dark:text-gray-400 font-medium text-lg mb-2">
           More from OpenText
@@ -19,7 +23,7 @@ export default function StayInTheLoop() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Link href="/about-opentext" passHref>
-            <div className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
+            <div   data-aos="fade-left" className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
               <Info className="text-blue-600 dark:text-blue-400 text-3xl mr-4" />
               <div>
                 <h4 className="text-blue-600 dark:text-blue-400 font-bold text-lg">
@@ -30,7 +34,7 @@ export default function StayInTheLoop() {
           </Link>
 
           <Link href="/opentext-blogs" passHref>
-            <div className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
+            <div data-aos="fade-up" className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
               <FileText className="text-blue-600 dark:text-blue-400 text-3xl mr-4" />
               <div>
                 <h4 className="text-blue-600 dark:text-blue-400 font-bold text-lg">
@@ -41,7 +45,7 @@ export default function StayInTheLoop() {
           </Link>
 
           <Link href="/contact-us" passHref>
-            <div className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
+            <div   data-aos="fade-right" className="flex items-center bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-lg shadow-sm cursor-pointer hover:shadow-md transition-shadow duration-200">
               <Send className="text-blue-600 dark:text-blue-400 text-3xl mr-4" />
               <div>
                 <h4 className="text-blue-600 dark:text-blue-400 font-bold text-lg">

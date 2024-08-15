@@ -1,4 +1,12 @@
 "use client";
+import {
+  FacebookIcon,
+  Instagram,
+  LinkedinIcon,
+  TwitchIcon,
+  TwitterIcon,
+  XIcon,
+} from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React from "react";
@@ -9,17 +17,28 @@ const FooterComponent = (props: Props) => {
   const { theme } = useTheme();
 
   return (
-    <footer className="bg-white dark:bg-gray-900 py-2 border-t border-gray-200 dark:border-gray-700">
-      <div className="mx-auto px-14 border-b border-gray-200 dark:border-gray-700 pb-8 mt-5">
-        <img
-          src={
-            theme === "light"
-              ? "/images/cylonoak-logo-dark.png"
-              : "/images/cylonoak_logo.png"
-          }
-          alt="Cylonoak Logo"
-          className="w-auto h-10"
-        />
+    <footer
+      data-aos="fade-up"
+      className="bg-white dark:bg-gray-900 py-2 border-t border-gray-200 dark:border-gray-700"
+    >
+      <div className="mx-auto px-14 border-gray-200 dark:border-gray-700 pb-8 mt-5">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <img
+            src={
+              theme === "light"
+                ? "/images/cylonoak-logo-dark.png"
+                : "/images/cylonoak_logo.png"
+            }
+            alt="Cylonoak Logo"
+            className="w-auto h-10"
+          />
+          <div className="flex flex-wrap justify-center space-x-2 space-y-4 md:space-y-0 md:space-x-4 mt-4">
+            <FacebookIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+            <Instagram className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+            <TwitterIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer " />
+            <LinkedinIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+          </div>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-700 dark:text-gray-300 border-t border-gray-200 dark:border-gray-700 mt-8 pt-4 text-sm">
           <div className="mt-4">
             <h5 className="font-bold mb-4 text-gray-800 dark:text-white">

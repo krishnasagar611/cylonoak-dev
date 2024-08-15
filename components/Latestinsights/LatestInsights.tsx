@@ -5,10 +5,14 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 export default function LatestInsights() {
   return (
     <section className="px-14 py-14 bg-gray-100 dark:bg-gray-900">
-      <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+      <h2 data-aos="fade-right" className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
         Latest insights
       </h2>
-      <div className="grid grid-cols-6 gap-6">
+      <div
+        data-aos="fade-up"
+        // data-aos-once={true}
+        className="grid grid-cols-6 gap-6"
+      >
         {/* First Card with Image */}
         <div className="col-span-6 md:col-span-3 cursor-pointer transform transition-transform duration-300 hover:-translate-x-2">
           <div className="flex-1 flex flex-col justify-between bg-white dark:bg-slate-800 py-4 px-4 h-[280px] ">
@@ -34,17 +38,23 @@ export default function LatestInsights() {
               className="w-full h-[295px] object-cover"
               width={200}
               height={150}
+              quality={100}
+              loading="lazy"
             />
           </div>
         </div>
 
         {/* Second Card */}
-        <div className="col-span-6 md:col-span-3 flex flex-col">
+        <div
+          // data-aos="fade-left"
+          // data-aos-once={true}
+          className="col-span-6 md:col-span-3 flex flex-col"
+        >
           <div className="flex justify-center gap-6 mb-4">
             <div className="space-y-4">
               <div className="bg-teal-600 dark:bg-teal-700 text-white p-6 col-span-6 md:col-span-3 flex flex-col justify-between h-[280px] w-[285px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
                 <div>
-                  <span className="inline-block bg-black text-white text-xs font-bold px-2 mb-4">
+                  <span className="inline-block bg-black text-white text-xs font-bold px-4 py-2 mb-4 rounded-sm">
                     E-Book
                   </span>
                   <h3 className="text-xl font-semibold mb-4">
@@ -52,14 +62,14 @@ export default function LatestInsights() {
                   </h3>
                 </div>
                 <Link href="/get-ebook">
-                  <div className="text-white hover:underline mt-4 cursor-pointer">
-                    Get the e-book &rarr;
+                  <div className="text-white hover:underline mt-4 cursor-pointer font-bold">
+                    Get the e-book <ChevronRight className="inline w-4 h-4" />
                   </div>
                 </Link>
               </div>
               <div className="bg-orange-600 dark:bg-orange-700 text-white p-6 col-span-6 md:col-span-3 flex flex-col justify-between w-[285px] h-[280px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
                 <div>
-                  <span className="inline-block bg-black text-white text-xs font-bold px-2 mb-4">
+                  <span className="inline-block bg-black text-white text-xs font-bold px-4 py-2 mb-4 rounded-sm">
                     Publication
                   </span>
                   <h3 className="text-xl font-semibold mb-4">
@@ -67,8 +77,9 @@ export default function LatestInsights() {
                   </h3>
                 </div>
                 <Link href="/read-edition">
-                  <div className="text-white hover:underline mt-4 cursor-pointer">
-                    Read this edition &rarr;
+                  <div className="text-white hover:underline mt-4 cursor-pointer font-bold">
+                    Read this edition{" "}
+                    <ChevronRight className="inline w-4 h-4" />
                   </div>
                 </Link>
               </div>
