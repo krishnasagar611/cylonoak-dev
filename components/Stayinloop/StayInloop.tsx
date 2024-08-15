@@ -6,7 +6,7 @@ export default function StayInTheLoop() {
     <section
       data-aos="fade-up"
       // data-aos-once={true}
-      className="py-16 bg-gray-100 dark:bg-gray-900 px-14"
+      className="py-16 bg-gray-100 dark:bg-gray-900 lg:px-28 px-4"
     >
       <div className="mx-auto">
         <h3 className="text-gray-600 dark:text-gray-400 font-medium text-lg mb-2">

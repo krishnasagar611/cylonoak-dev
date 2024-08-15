@@ -49,7 +49,7 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="py-12 px-14 bg-gray-100 dark:bg-gray-900">
+    <div className="py-8 lg:px-28 px-4 bg-gray-100 dark:bg-gray-900">
       <div className="flex justify-between items-center mb-6 ">
         <h2 data-aos="fade-right" className="text-2xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2">
           <span className="bg-gray-900 dark:bg-gray-100  dar h-6 w-1 rounded-sm"></span> Solutions built for you

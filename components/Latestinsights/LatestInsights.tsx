@@ -1,21 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronDown, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import LatestInsightsMobile from "./LatestInsideMobile";
 
 export default function LatestInsights() {
   return (
-    <section className="px-14 py-14 bg-gray-100 dark:bg-gray-900">
-      <h2 data-aos="fade-right" className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+    <section className="px-4 lg:px-28 bg-gray-100 dark:bg-gray-900">
+      <h2
+        data-aos="fade-right"
+        className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+      >
         Latest insights
       </h2>
-      <div
-        data-aos="fade-up"
-        // data-aos-once={true}
-        className="grid grid-cols-6 gap-6"
-      >
-        {/* First Card with Image */}
+      <div className="hidden lg:grid lg:grid-cols-6 lg:gap-6 ">
         <div className="col-span-6 md:col-span-3 cursor-pointer transform transition-transform duration-300 hover:-translate-x-2">
-          <div className="flex-1 flex flex-col justify-between bg-white dark:bg-slate-800 py-4 px-4 h-[280px] ">
+          <div className="flex-1 flex flex-col justify-between bg-white dark:bg-slate-800 py-4 px-4 h-[280px]">
             <div>
               <span className="inline-block bg-black text-white text-xs font-bold px-4 py-2 mb-4 rounded-sm">
                 Tool
@@ -45,14 +44,10 @@ export default function LatestInsights() {
         </div>
 
         {/* Second Card */}
-        <div
-          // data-aos="fade-left"
-          // data-aos-once={true}
-          className="col-span-6 md:col-span-3 flex flex-col"
-        >
+        <div className="col-span-6 md:col-span-3 flex flex-col">
           <div className="flex justify-center gap-6 mb-4">
             <div className="space-y-4">
-              <div className="bg-teal-600 dark:bg-teal-700 text-white p-6 col-span-6 md:col-span-3 flex flex-col justify-between h-[280px] w-[285px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
+              <div className="bg-teal-600 dark:bg-teal-700 text-white p-6 flex flex-col justify-between h-[280px] w-[285px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
                 <div>
                   <span className="inline-block bg-black text-white text-xs font-bold px-4 py-2 mb-4 rounded-sm">
                     E-Book
@@ -67,7 +62,7 @@ export default function LatestInsights() {
                   </div>
                 </Link>
               </div>
-              <div className="bg-orange-600 dark:bg-orange-700 text-white p-6 col-span-6 md:col-span-3 flex flex-col justify-between w-[285px] h-[280px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
+              <div className="bg-orange-600 dark:bg-orange-700 text-white p-6 flex flex-col justify-between w-[285px] h-[280px] transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
                 <div>
                   <span className="inline-block bg-black text-white text-xs font-bold px-4 py-2 mb-4 rounded-sm">
                     Publication
@@ -84,8 +79,8 @@ export default function LatestInsights() {
                 </Link>
               </div>
             </div>
-            <div className="col-span-6 md:col-span-3 flex flex-col transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
-              <div className="flex-shrink-0 ">
+            <div className="flex flex-col transform transition-transform duration-300 hover:-translate-x-2 cursor-pointer">
+              <div className="flex-shrink-0">
                 <Image
                   src="/images/insight_2nd_img.jpg"
                   alt="AI Adoption"
@@ -113,6 +108,11 @@ export default function LatestInsights() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile View */}
+      <div className="lg:hidden">
+        <LatestInsightsMobile />
       </div>
     </section>
   );

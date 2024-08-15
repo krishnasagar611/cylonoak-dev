@@ -26,7 +26,7 @@ function HeroSection({}: Props) {
         <div
           data-aos="fade-right"
           data-aos-once={true}
-          className="absolute inset-0 flex flex-col items-start justify-center p-4 space-y-4 text-gray-950 dark:text-gray-300 sm:px-6 md:px-10 lg:px-14"
+          className="absolute inset-0 flex flex-col items-start justify-center p-4 space-y-4 text-gray-950 dark:text-gray-300  lg:px-28 px-4"
         >
           <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
             AI innovations at CYLONOAK

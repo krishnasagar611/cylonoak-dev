@@ -21,8 +21,8 @@ const FooterComponent = (props: Props) => {
       data-aos="fade-up"
       className="bg-white dark:bg-gray-900 py-2 border-t border-gray-200 dark:border-gray-700"
     >
-      <div className="mx-auto px-14 border-gray-200 dark:border-gray-700 pb-8 mt-5">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="mx-auto lg:px-28 px-4 border-gray-200 dark:border-gray-700 mt-5">
+        <div className="flex md:flex-row justify-between items-start">
           <img
             src={
               theme === "light"
@@ -32,11 +32,11 @@ const FooterComponent = (props: Props) => {
             alt="Cylonoak Logo"
             className="w-auto h-10"
           />
-          <div className="flex flex-wrap justify-center space-x-2 space-y-4 md:space-y-0 md:space-x-4 mt-4">
-            <FacebookIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
-            <Instagram className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
-            <TwitterIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer " />
-            <LinkedinIcon className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+          <div className="flex flex-wrap justify-center space-x-2 md:space-y-0 md:space-x-4 md:mt-4 mt-2">
+            <FacebookIcon className="w-6 h-6 text-blue-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+            <Instagram className="w-6 h-6 text-blue-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+            <TwitterIcon className="w-6 h-6 text-blue-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
+            <LinkedinIcon className="w-6 h-6 text-blue-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer" />
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-gray-700 dark:text-gray-300 border-t border-gray-200 dark:border-gray-700 mt-8 pt-4 text-sm">
@@ -91,7 +91,7 @@ const FooterComponent = (props: Props) => {
                   Enterprise Management Cloud
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/marketplace" className="hover:text-blue-500">
                   Marketplace<span className="inline-block ml-1">↗</span>
                 </Link>
@@ -108,7 +108,7 @@ const FooterComponent = (props: Props) => {
                 <Link href="/partners" className="hover:text-blue-500">
                   Partners
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -257,8 +257,8 @@ const FooterComponent = (props: Props) => {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-4 text-sm text-gray-600 dark:text-gray-400 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-wrap justify-center space-x-2 space-y-4 md:space-y-0 md:space-x-4 mt-4">
+        <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-4 text-sm text-gray-600 dark:text-gray-400 flex flex-col md:flex-row md:justify-between items-center">
+          <div className="flex flex-wrap justify-center space-x-2 md:space-y-0 md:space-x-4">
             <Link href="/legal" className="hover:text-blue-500">
               Legal
             </Link>
@@ -283,7 +283,7 @@ const FooterComponent = (props: Props) => {
               Cookie Preferences
             </Link>
           </div>
-          <p className="text-gray-700 dark:text-gray-400 space-y-4  md:mt-0">
+          <p className="text-gray-700 dark:text-gray-400 mt-4 md:mt-0">
             © 2024 Cylonoak, Inc.
           </p>
         </div>
