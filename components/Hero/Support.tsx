@@ -4,8 +4,8 @@ import { Button } from "../ui/button";
 
 export default function SupportSection() {
   return (
-    <section className="bg-[#0057D2] text-white">
-      <div className=" mx-auto flex flex-col md:flex-row items-center px-14 space-x-8">
+    <section className="bg-[#0057D2] text-white relative">
+      <div className=" mx-auto flex flex-col md:flex-row items-center lg:px-28 px-4 space-x-8">
         <div className="md:w-1/2">
           <h1 className="text-4xl font-bold mb-4">
             Enterprise Resource Planning

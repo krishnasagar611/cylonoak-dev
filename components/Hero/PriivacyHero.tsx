@@ -4,8 +4,8 @@ import { Button } from "../ui/button";
 
 export default function PrivacySection() {
   return (
-    <section className="bg-[#EBF8FF] text-gray-950">
-      <div className=" mx-auto flex flex-col md:flex-row items-center px-14 space-x-8">
+    <section className="bg-[#EBF8FF] text-gray-950 relative">
+      <div className=" mx-auto flex flex-col md:flex-row items-center lg:px-28 px-4 space-x-8">
         <div className="md:w-1/2">
           <h1 className="text-4xl font-bold mb-4">SAP Privacy Statement</h1>
           <p className="mb-6 text-lg">

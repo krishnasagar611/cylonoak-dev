@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function ERPSection() {
   return (
-    <section className="bg-[#A100C2] text-white ">
+    <section className="bg-[#A100C2] text-white relative">
       <div className="mx-auto flex flex-col-reverse md:flex-row items-center lg:px-28 px-4 space-x-0 md:space-x-8  md:py-0 py-14">
         <div className="md:w-1/2">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -31,7 +31,7 @@ export default function ERPSection() {
           <div className="relative">
             <div className="absolute inset-0 h-full w-full transform rotate-6 rounded-md"></div>
             <Image
-              src="/images/women_.webp" 
+              src="/images/women_.webp"
               alt="Woman"
               width={500}
               height={500}
