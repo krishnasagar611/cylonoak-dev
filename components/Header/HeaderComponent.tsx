@@ -92,13 +92,11 @@ const HeaderComponent = (props: Props) => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 md:hidden z-40`}
       >
-        {/* Close Button */}
         <button
           className="block text-gray-700 dark:text-gray-300 focus:outline-none p-4"
           onClick={toggleMenu}
