@@ -33,7 +33,7 @@ export default function SubHeader() {
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 items-start lg:items-center h-auto lg:h-16 `}
+          } lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 items-start lg:items-center lg:pb-0 pb-10 h-auto lg:h-16 `}
         >
           <hr className="border-t border-gray-500 dark:border-gray-600 my-4 hidden lg:block" />
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
