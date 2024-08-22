@@ -1,6 +1,6 @@
 import React from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
-import { CircleUser, ExternalLink, MoveUpIcon, MoveUpRight } from "lucide-react";
+import { CircleUser, ExternalLink, MoveRight, MoveUpIcon, MoveUpRight } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
@@ -58,7 +58,7 @@ const UserPopover = () => {
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Adaptive Planning{" "}
-              <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
+              <MoveRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
           </li>
           <li>
