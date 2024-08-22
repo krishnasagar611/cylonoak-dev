@@ -19,9 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
         <ThemeProvider attribute="class" defaultTheme="system">
-          <HeaderComponent />
           <Animate>{children}</Animate>
-          <FooterComponent />
         </ThemeProvider>
       </body>
     </html>

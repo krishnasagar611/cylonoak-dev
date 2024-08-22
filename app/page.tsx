@@ -9,10 +9,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <HeaderComponent />
       <HeroSection />
       <Solutions />
-      <LatestInsights/>
+      <LatestInsights />
       <StayInTheLoop />
+      <FooterComponent />
     </>
   );
 }

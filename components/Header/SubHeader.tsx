@@ -17,7 +17,7 @@ export default function SubHeader() {
       <div className="mx-auto px-4 lg:px-28 flex flex-col lg:flex-row">
         <div className="flex justify-between items-center h-16 lg:h-auto">
           <h2 className="text-gray-700 dark:text-gray-200 font-semibold">
-            Enterprise Resource Planning (ERP)
+            {'Enterprise Resource Planning (ERP)'}
           </h2>
           <button
             className="block lg:block xl:hidden 2xl:hidden"
