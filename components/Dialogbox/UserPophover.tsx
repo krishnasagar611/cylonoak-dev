@@ -43,7 +43,7 @@ const UserPopover = () => {
               href="#"
               className="text-blue-600 dark:text-blue-400 text-sm mt-2  flex justify-between"
             >
-              More Information <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
+              More Information <MoveRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
           </div>
         </div>
@@ -58,7 +58,7 @@ const UserPopover = () => {
               className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Adaptive Planning{" "}
-              <MoveRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
+              <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
           </li>
           <li>
