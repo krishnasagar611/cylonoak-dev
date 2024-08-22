@@ -13,16 +13,13 @@ export default function SubHeader() {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 absolute z-50 w-full">
+    <nav className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 absolute z-50 w-full">
       <div className="mx-auto px-4 lg:px-28 flex flex-col lg:flex-row">
         <div className="flex justify-between items-center h-16 lg:h-auto">
           <h2 className="text-gray-700 dark:text-gray-200 font-semibold">
-            {'Enterprise Resource Planning (ERP)'}
+            {"Enterprise Resource Planning"}
           </h2>
-          <button
-            className="block lg:block xl:hidden 2xl:hidden"
-            onClick={toggleSubMenu}
-          >
+          <button className="block lg:hidden" onClick={toggleSubMenu}>
             {isMenuOpen ? (
               <ChevronUp className="h-6 w-6 text-gray-700 dark:text-gray-200" />
             ) : (
@@ -39,37 +36,37 @@ export default function SubHeader() {
           <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
             <Link
               href="/overview"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
               Overview
             </Link>
             <Link
               href="/benefits"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
               Benefits
             </Link>
             <Link
               href="/customers"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
               Customers
             </Link>
             <Link
               href="/innovations"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
               Innovations
             </Link>
             <Link
               href="/additional-solutions"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
-              Additional ERP Solutions
+              Solutions
             </Link>
             <Link
               href="/analysts"
-              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400"
+              className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 border-b-2 border-transparent hover:border-blue-600 dark:hover:border-blue-400 text-sm"
             >
               Analysts
             </Link>
