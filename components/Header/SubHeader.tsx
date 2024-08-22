@@ -13,7 +13,7 @@ export default function SubHeader() {
   };
 
   return (
-    <nav className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 absolute z-50 w-full">
+    <nav className="bg-gray-100 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 absolute z-10 w-full">
       <div className="mx-auto px-4 lg:px-28 flex flex-col lg:flex-row">
         <div className="flex justify-between items-center h-16 lg:h-auto">
           <h2 className="text-gray-700 dark:text-gray-200 font-semibold">
