@@ -41,7 +41,7 @@ const UserPopover = () => {
             </p>
             <Link
               href="#"
-              className="text-blue-600 dark:text-blue-400 text-sm mt-2  flex justify-between"
+              className="text-blue-600 dark:text-blue-400 text-sm mt-2 "
             >
               More Information <MoveRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
@@ -55,7 +55,7 @@ const UserPopover = () => {
           <li>
             <Link
               href="#"
-              className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="flex items-center  text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Adaptive Planning{" "}
               <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
@@ -64,7 +64,7 @@ const UserPopover = () => {
           <li>
             <Link
               href="#"
-              className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="flex items-center text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Peakon <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
@@ -72,7 +72,7 @@ const UserPopover = () => {
           <li>
             <Link
               href="#"
-              className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="flex items-center text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Extend <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
@@ -80,7 +80,7 @@ const UserPopover = () => {
           <li>
             <Link
               href="#"
-              className="flex items-center justify-between text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              className="flex items-center text-sm text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               Workday Community <MoveUpRight className="inline w-4 h-4 ml-1 text-blue-500 font-bold" />
             </Link>
